@@ -10,7 +10,12 @@
 	<properties>
 		<version.com.h2database>2.1.214</version.com.h2database>
 		<version.junit>4.13.2</version.junit>
-		<version.org.hibernate>5.6.11.Final</version.org.hibernate>
+
+<!--	<version.org.hibernate>5.6.11.Final</version.org.hibernate>--> <!--Latest 5.6.11.Final KO ! -->
+<!--	<version.org.hibernate>5.6.10.Final</version.org.hibernate>--> <!-- 5.6.10.Final KO !-->
+<!--	<version.org.hibernate>5.6.6.Final</version.org.hibernate>--> <!-- 5.6.6.Final KO ! -->
+	<version.org.hibernate>5.6.5.Final</version.org.hibernate> <!--5.6.5.Final OK -->
+<!--	<version.org.hibernate>5.4.32.Final</version.org.hibernate>  --> <!--5.4.32.Final OK -->
 		<version.org.slf4j>1.7.33</version.org.slf4j>
 	</properties>
 
@@ -19,6 +24,11 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${version.org.hibernate}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.7.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
